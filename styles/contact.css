@@ -1,0 +1,26 @@
+table, td{
+    border: 1px solid var(--textColor);
+    border-collapse: collapse;
+}
+
+tr>td:first-child{
+    text-align: right;
+    font-weight: bold;
+    background-color: var(--textColor);
+    color: var(--textColorNegative);
+    vertical-align: text-top;
+}
+
+tr:not(:last-child)>td:first-child{
+    border-bottom: 1px solid var(--textColorNegative);
+}
+
+td {
+    padding: 0.5em 1em;
+}
+
+@media screen and (max-width: 768px) {
+    table{
+        width: 100%;
+    }
+}

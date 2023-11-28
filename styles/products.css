@@ -1,0 +1,20 @@
+main ul{
+	display: grid;
+	list-style: none;
+	padding-inline-start: 0;
+	grid-template-columns: 1fr 1fr;
+	gap: 1em;
+}
+main ul li{
+	border: 1px solid var(--mutedColor);
+	border-radius: 1em;
+}
+main ul li img {
+	border-radius: 1em 1em 0em 0em;
+	width: 100%;
+}
+
+main ul li p{
+	margin-block: 0;
+	padding: 1em;
+}

@@ -1,0 +1,62 @@
+/* CSS specific to index. */
+/* Contains code for jumbotron */
+
+main{
+    padding: 0;
+}
+
+section{
+    padding: 2em 8em;
+}
+
+#product {
+    background-color: var(--textColor);
+    background-image: url("../images/anvil.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    color: var(--textColorNegative);
+    font-size: 1.5em;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    box-sizing: border-box;
+}
+
+#product .button {
+    background-color: var(--textColorNegative);
+    color: var(--textColor);
+    float: right;
+}
+
+#product .headline {
+    flex: 1 0;
+    margin-bottom: 2em;
+}
+
+
+section:nth-of-type(2n) img{
+	float: right;
+	height: 240px;
+	margin-bottom: 2em;
+	margin-left: 1em;
+}
+
+/* i can't take it anymore. i have to use flexbox. */
+/* i need to align this thing to the bottom of the container */
+
+/* mobile layouts */
+
+@media screen and (max-width: 768px) {
+    #product {
+        font-size: 1em;
+    }
+    section{
+        padding: 2em;
+    }
+    section:nth-of-type(2n) img{
+	width: 100%;
+	height: auto;
+    }
+}

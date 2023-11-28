@@ -1,0 +1,24 @@
+.team{
+    display: flex;
+    gap: 1em;
+    justify-content: space-between
+}
+
+.team .member{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.team .member img{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.team .member h3,
+.team .member p{
+    text-align: center;
+    margin-block: 0;
+}

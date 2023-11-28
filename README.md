@@ -1,2 +1,2 @@
-# Static Website
-This folder contains the files for a static website.
+# Static Website - ACME Corporation
+This folder contains the files for ACME Corporation, a fictional manufacturing business.

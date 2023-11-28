@@ -19,8 +19,90 @@ td {
     padding: 0.5em 1em;
 }
 
+form{
+    width: 320px;
+    display: grid;
+    gap: 1em;
+}
+
+input[type="submit"],
+input[type="reset"]{
+    color: var(--textColorNegative);
+    padding: .5em 1em;
+    text-align: center;
+    background: var(--primaryColor);
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 0;
+    font-size: 1em;
+    font-family: var(--font);
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select{
+    appearance: none;
+    font-size: 1em;
+    font-family: var(--font);
+    border-radius: 5px;
+    border: 1px solid var(--mutedColor);
+    padding: .25em .5em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus{
+    outline: 2px solid var(--primaryColor);
+}
+
+select{
+    background-image: url("../images/arrow.png");
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: calc( 100% - 9px );
+    background-color: #fff;;
+}
+
+fieldset {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.25em;
+}
+
+fieldset > textarea{
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+form > fieldset > div{
+    display: grid;
+    grid-template-columns: 8em 1fr;
+    gap: 1em;
+}
+
+form > fieldset > div > label{
+    text-align: right;
+    display: inline;
+    margin-top: .25em;
+}
+
+
 @media screen and (max-width: 768px) {
-    table{
+    table, form,    
+    input[type="submit"],
+    input[type="reset"]
+    {
         width: 100%;
+    }
+    input[type="submit"]{
+        margin-bottom: 1em;
     }
 }

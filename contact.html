@@ -15,17 +15,20 @@
         <nav>
             <ul>
                 <li id="home"><a href="index.html"><span><img class="logo" alt="" src="images/icon-white.svg">ACME
-                            Corporation</span></a></li>
+                        Corporation</span></a></li>
                 <li><a href="products.html"><span>Our products</span></a></li>
                 <li><a href="aboutus.html"><span>Our team</span></a></li>
+                <li><a href="testimonials.html"><span>Our customers</span></a></li>
                 <li><a href="contact.html"><span>Contact us</span></a></li>
+                <li><a href="links.html"><span>Links</span></a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
             <h1>Contact us</h1>
-            <p>If you have any concerns or feedback about our products, our offices can be reached via email or phone.</p>
+            <p>If you have any concerns or feedback about our products, our offices can be reached via email or phone. You can also contact us directly using the form below our service hours.</p>
+            <h3>Office info</h3>
             <table>
                 <tbody>
                     <tr>
@@ -46,21 +49,59 @@
                     </tr>
                 </tbody>
             </table>
+            <h3>..or contact us directly</h3>
+            <form action="feedback.php" method="post">
+                <fieldset>
+                <legend>Enter your information</legend>
+                <div>
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" placeholder="Jim">
+                </div>
+                <div>
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" placeholder="Whallabim">
+                </div>
+                <div>
+                <label for="email">E-mail Address</label>
+                <input type="text" name="email" id="email" placeholder="jim@acmeanvilcorp.com">
+                </div>
+                <div>
+                <label for="topic">Subject</label>
+                <select name="topic" id="topic">
+                    <option value="other">N/A</option>
+                    <option value="inquiry">Product Inquiry or Concern</option>
+                    <option value="pricing">Pricing Information</option>
+                    <option value="bulk">Bulk Purchasing</option>
+                </select>
+                </div>
+                </fieldset>
+                <fieldset>
+                <legend>Your message</legend>
+                <textarea></textarea>
+                </fieldset>
+                <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Cancel">
+                </div>
+            </form>
         </section>
     </main>
     <footer>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="links.html">Links</a></li>
             </ul>
             <ul>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="aboutus.html">Employees</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
             </ul>
         </nav>
         <address>
             ACME Corporation<br>
+            www.acmeanvilcorp.com<br>
             Toronto, ON<br>
             Anvil image rendered using Blender<br>
             Logo hastily designed in Adobe Illustrator

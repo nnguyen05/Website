@@ -1,3 +1,32 @@
+table, td{
+    border: 1px solid var(--textColor);
+    border-collapse: collapse;
+}
+
+tr>td:first-child,
+tr>th{
+    text-align: right;
+    font-weight: bold;
+    background-color: var(--textColor);
+    color: var(--textColorNegative);
+    vertical-align: text-top;
+}
+
+tr:not(:last-child)>td:first-child, tr>th:first-child{
+    border-bottom: 1px solid var(--textColorNegative);
+}
+
+tr>th:not(:last-child){
+    border-right: 1px solid var(--textColorNegative);
+}
+
+td, th {
+    padding: 0.5em 1em;
+}
+tr>th{
+	text-align: center;
+}
+
 main ul{
 	display: grid;
 	list-style: none;
@@ -17,4 +46,16 @@ main ul li img {
 main ul li p{
 	margin-block: 0;
 	padding: 1em;
+}
+
+@media screen and (max-width: 768px) {
+	main ul{
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	main ul{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }

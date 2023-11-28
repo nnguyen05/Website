@@ -35,6 +35,23 @@ section{
     margin-bottom: 2em;
 }
 
+section::after{
+    content: '';
+    clear:both;
+    overflow: hidden;
+}
+
+section:nth-of-type(2n+1):not(#product) img{
+    clear:both;
+	float: left;
+	height: 240px;
+	margin-bottom: 2em;
+	margin-right: 1em;
+}
+
+section:nth-of-type(2n+1):not(#product){
+    clear: both;
+}
 
 section:nth-of-type(2n) img{
 	float: right;
@@ -55,8 +72,12 @@ section:nth-of-type(2n) img{
     section{
         padding: 2em;
     }
-    section:nth-of-type(2n) img{
-	width: 100%;
-	height: auto;
+    section:nth-of-type(2n+1):not(#product){
+        text-align: left;
+    }
+    section:nth-of-type(2n) img,
+    section:nth-of-type(2n+1):not(#product) img{
+	    width: 100%;
+        height: auto;
     }
 }

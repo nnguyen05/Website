@@ -1,0 +1,12 @@
+main > section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em
+}
+
+
+@media screen and (max-width: 960px) {
+    main > section{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,7 @@
+main ul{
+    list-style-type: "\2b9e";
+    padding-inline-start: 1em;;
+}
+main ul li{
+    padding-inline-start: 0.25em;;
+}
